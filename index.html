@@ -229,10 +229,10 @@
           </div>
 
           <p>
-              By making use of the generative priors extracted from transparent generation model ϵ<sub>θ, FG</sub>, LayerFusion is able to generate image triplets consisting a foreground (RGBA), 
-              a background, and a blended image. Our framework involves three fundamental components that are connected with each other. First we introduce a prior pass on ϵ<sub>θ, FG</sub> (a) 
-              for extracting the <b>structure prior</b>, and then introduce an attention-level interaction between two denoising networks (ϵ<sub>θ, FG</sub> and ϵ<sub>θ</sub>) (b), with an attention 
-              level blending scheme with layer-wise <b>content confidence prior</b>, combined with the <b>structure prior</b> (c). 
+            Our pipeline processes a set of sample domain-specific images and a text prompt using a Vision-Language Model (VLM) to generate a hierarchical semantic corpus of attributes relevant to a specific domain. 
+            Based on this corpus, DiffEx identifies and ranks the most influential features affecting the classifier's decisions, 
+            sorting them from most to least impactful. The diagram illustrates this process, highlighting both unedited images and counterfactual examples annotated with confidence scores to demonstrate the changing influence of specific attributes on classifier predictions. 
+            This hierarchical approach provides a structured understanding of which features drive classifier outputs.
           </p>
         </div>
       </div>
